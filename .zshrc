@@ -42,6 +42,7 @@ unsetopt correct_all
 alias proxy="python ~/software/goagent/local/proxy.py"
 alias ack="ack-grep"
 alias more=less
+alias gdiff="git diff"
 
 # nvm 
 source ~/nvm/nvm.sh
