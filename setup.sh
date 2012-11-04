@@ -3,7 +3,7 @@
 # if the file is a symbol link, delete it and make a new symbol link
 # else if the file is a regular file, mv file file.orgin
 
-link () {
+slink () {
 	filename=$1
 	home_file="${HOME}/${filename}"
 	current_file="$(pwd)/${filename}"
@@ -22,5 +22,5 @@ link () {
 files=$(find \( -name '.[!.]?*' \) -not \( -name '.git' \) -exec basename '{}' ';')
 
 for f in $files; do
-	link $f
+	slink $f
 done
