@@ -1,0 +1,14 @@
+[user]
+	name = Arthur Chen
+	email = chenchaokun@gmail.com
+[color]
+	ui = true
+[core]
+	editor = vi
+[alias]
+	co = checkout
+	br = branch
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	st = status
+[merge]
+	tool = vimdiff
