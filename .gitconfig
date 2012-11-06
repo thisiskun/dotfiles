@@ -5,6 +5,7 @@
 	ui = true
 [core]
 	editor = vi
+	excludesfile = /home/kun/.global_ignore
 [alias]
 	co = checkout
 	br = branch
