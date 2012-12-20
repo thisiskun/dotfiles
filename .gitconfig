@@ -6,6 +6,7 @@
 [core]
 	editor = vi
 	excludesfile = /home/kun/.global_ignore
+	autocrlf = input
 [alias]
 	co = checkout
 	br = branch
