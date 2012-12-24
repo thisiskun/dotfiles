@@ -4,9 +4,9 @@
 # else if the file is a regular file, mv file file.origin
 
 slink () {
-	filename=$1
-	home_file="${HOME}/${filename}"
-	current_file="$(pwd)/${filename}"
+	local filename=$1
+	local home_file="${HOME}/${filename}"
+	local current_file="$(pwd)/${filename}"
 	if [ -e "$home_file" ]; then
 		if [ -L "$home_file" ]; then
 			rm "$home_file"
