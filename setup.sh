@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # if the file is a symbol link, delete it and make a new symbol link
-# else if the file is a regular file, mv file file.orgin
+# else if the file is a regular file, mv file file.origin
 
 slink () {
 	filename=$1
@@ -11,7 +11,7 @@ slink () {
 		if [ -L "$home_file" ]; then
 			rm "$home_file"
 		else
-			mv "$home_file" "${home_file}.orgin"
+			mv "$home_file" "${home_file}.origin"
 		fi
 	fi
 	ln -s $current_file $home_file
